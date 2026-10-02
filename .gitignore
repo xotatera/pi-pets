@@ -1,0 +1,18 @@
+# Dependencies, builds, and local tool output
+/node_modules/
+/dist/
+/build/
+/coverage/
+/.cache/
+*.tsbuildinfo
+*.log
+*.tgz
+.DS_Store
+Thumbs.db
+
+# Local credentials; example templates remain trackable
+.env
+.env.*
+!.env.example
+
+# Configure personal paths in .git/info/exclude before handling private assets.
