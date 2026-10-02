@@ -7,7 +7,7 @@ An animated companion for the **Pi terminal agent**. Bundled Pi is an original c
 Install the published Pi package (Node.js 22.19.0+):
 
 ```sh
-pi install npm:pi-pets@0.1.0
+pi install npm:@xotatera/pi-pets@0.1.0
 ```
 
 Alternatively install from Git, or try the local checkout:

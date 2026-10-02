@@ -4,7 +4,7 @@
 
 Publish Pi Pets as a public GitHub repository and an npm-distributed Pi package eligible for the Pi package gallery. The owner confirms they are authorized to grant downstream reuse and redistribution rights for bundled Pi artwork and chooses MIT for **both code and bundled original Pi assets**, with `xotatera` as copyright holder. This authorization does not extend to user-imported pets or third-party dependencies. Do not copy private artwork, credentials, settings or local source archives into either public channel.
 
-Target GitHub repository: `xotatera/pi-pets`, public. Target npm package: unscoped `pi-pets@0.1.0` (existing package name/version; registry lookup returned not found at design time, subject to race). npm and GitHub read-only account checks returned `xotatera`. Pi's package docs say `pi-package` makes a published npm package **eligible** for its gallery; discovery/listing timing is outside this project. Git-only installation remains an alternative but does not replace requested npm publication.
+Target GitHub repository: `xotatera/pi-pets`, public (created and pushed). Target npm package: scoped `@xotatera/pi-pets@0.1.0`. The initial unscoped `pi-pets` publication failed with npm 403 because its name was too similar to `pipe-ts`; a 404 registry lookup did not guarantee name-policy acceptance. The owner approved switching to npm's suggested scope without changing the GitHub repository or bundled artwork. npm and GitHub account checks returned `xotatera`. Pi's package docs say `pi-package` makes a published npm package **eligible** for its gallery; discovery/listing timing is outside this project. Git-only installation remains an alternative but does not replace requested npm publication.
 
 ## Package and documentation
 
@@ -16,7 +16,7 @@ A public-source audit must inspect *tracked* GitHub files and the npm tarball li
 
 1. Add licensing/metadata/docs, inspect tracked-file privacy and npm contents, run tests/typecheck/pack and commit. No public side effect before these pass.
 2. Confirm public repository name does not already exist and GitHub authenticated identity is `xotatera`; create `xotatera/pi-pets` public and push `main` without force. Verify public `main` points to expected commit. Do not push unpublished source ZIPs or local-only files.
-3. Confirm npm identity `xotatera` and package name/version availability; run `npm publish --dry-run`, inspect packed assets/LICENSE, then publish `pi-pets@0.1.0` publicly. Registry versions are immutable; if an interactive OTP/passkey challenge is required, let the owner complete it in their own terminal without posting codes/tokens, then verify registry state. Do not retry a potentially successful publish blindly.
+3. Confirm npm identity `xotatera` and scoped package name/version availability; run `npm publish --dry-run`, inspect packed assets/LICENSE, then publish `@xotatera/pi-pets@0.1.0` publicly with `--access public`. Registry versions are immutable; if an interactive OTP/passkey challenge is required, let the owner complete it in their own terminal without posting codes/tokens, then verify registry state. Do not retry a potentially successful publish blindly.
 4. Check registry metadata and installability via Pi's documented `npm:` source, using a temporary isolated HOME/settings rather than modifying the owner's Pi configuration. Optionally add a Git tag matching the published version only after registry success and with a non-force push; do not create a release with inconsistent package contents.
 
 ## Failure boundaries
