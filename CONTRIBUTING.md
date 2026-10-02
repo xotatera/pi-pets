@@ -23,7 +23,7 @@ Review the package dry-run list before publication: only extension code, bundled
 
 ## Privacy and artwork
 
-Do not commit imported pet directories, original export ZIPs, screenshots, user account files, tokens, chat data, or proprietary spritesheets. Check staged files before committing to ensure private material is absent. The checked-in Pi artwork has no documented redistribution grant: resolve rights and a project license before distributing artwork. Do not infer permission from an asset being available locally.
+Do not commit imported pet directories, original export ZIPs, screenshots, user account files, tokens, chat data, or proprietary spritesheets. Check staged files before committing to ensure private material is absent. The original code and bundled Pi artwork in this repository are MIT-licensed (© 2026 xotatera). That license does not apply to imported pets or third-party art; do not infer permission from an asset being available locally.
 
 ## Before handing off a change
 

@@ -2,6 +2,15 @@
   "name": "pi-pets",
   "version": "0.1.0",
   "description": "An original animated Pi companion for the Pi terminal agent",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xotatera/pi-pets.git"
+  },
+  "homepage": "https://github.com/xotatera/pi-pets#readme",
+  "bugs": {
+    "url": "https://github.com/xotatera/pi-pets/issues"
+  },
   "type": "module",
   "keywords": [
     "pi-package"
@@ -18,7 +27,8 @@
     "index.ts",
     "src/",
     "assets/",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "test": "tsx --test",

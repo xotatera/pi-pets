@@ -8,7 +8,7 @@ Pi Pets is a TypeScript extension for the Pi terminal agent. Read `README.md` fo
 - Offline discovery is **Linux Codex CLI only** (`$CODEX_HOME` or `~/.codex`). Do not claim desktop-app, cloud, linked-profile, macOS or Windows discovery works. Do not inspect account stores, call internal APIs or download missing artwork.
 - Existing ZIP/directory import and Codex spritesheet conversion must preserve size, path, symlink, PNG, hash, and collision checks. Keep local-only source provenance out of exports and protect source destinations inside the final library mutation reservation.
 - `/pet-create` prompts for image-generation conditions; it does not detect capabilities or select/import artwork automatically.
-- Artwork rights are unresolved. Do not assert a distribution license or include another person's artwork in examples/fixtures.
+- The repository's original code and bundled Pi artwork are MIT-licensed (© 2026 xotatera). This does not cover user-imported pets or third-party artwork; never include another person's artwork in examples/fixtures.
 
 ## Changes and verification
 

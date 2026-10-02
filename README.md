@@ -4,16 +4,17 @@ An animated companion for the **Pi terminal agent**. Bundled Pi is an original c
 
 ## Install
 
-Try the extension from this directory:
+Install the published Pi package (Node.js 22.19.0+):
 
 ```sh
-pi --extension ./index.ts
+pi install npm:pi-pets@0.1.0
 ```
 
-Or install the local package alongside your other Pi extensions:
+Alternatively install from Git, or try the local checkout:
 
 ```sh
-pi install /absolute/path/to/pi-pets
+pi install git:github.com/xotatera/pi-pets
+pi --extension ./index.ts
 ```
 
 Run `/reload` after installation or updates. The widget stays above the editor by default; `/pet` toggles it.
@@ -101,4 +102,4 @@ To regenerate **bundled Pi** frames, place the original `Pi-export.zip` in the p
 
 ## Artwork and rights
 
-Bundled Pi uses coral `#F09082`, blue `#4D9ABF`, and gold `#F1BE58`. No redistribution license accompanied the supplied artwork; this repository does not invent a rights grant. Confirm artwork rights and choose a project license before publishing. Imported artwork remains user-managed and is not included in the published package; respect its authors' rights.
+Bundled Pi uses coral `#F09082`, blue `#4D9ABF`, and gold `#F1BE58`. The original code and bundled Pi artwork in this repository are licensed under MIT; see [LICENSE](LICENSE). This grant does **not** cover other people's artwork or pets you import. Imported artwork remains user-managed and is not included in the published package; respect its authors' rights.
